@@ -13,6 +13,7 @@ import tests.LostPasswordTest;
 import tests.MenuAccountTest;
 import tests.MenuTest;
 import tests.MyViewTest;
+import tests.ProfileMenuTest;
 
 @RunWith(Suite.class)
 @SuiteClasses({
@@ -23,6 +24,7 @@ import tests.MyViewTest;
 	MenuTest.class,
 	AccountTest.class,
 	MenuAccountTest.class,
+	ProfileMenuTest.class,
 	BugReportTest.class, 
 	BugReportRulesTest.class
 })

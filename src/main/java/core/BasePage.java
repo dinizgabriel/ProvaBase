@@ -70,6 +70,13 @@ public class BasePage {
 		return obterTexto(by);
 	}
 	
+	public String selecionarCombo(By by, String sValor) {
+		WebElement element = getDriver().findElement(by);
+		Select combo = new Select(element);
+		combo.selectByVisibleText(sValor);
+		return obterTexto(by);
+	}
+	
 	public void deselecionarCombo(String sId, String sValor) {
 		WebElement element = getDriver().findElement(By.id(sId));
 		Select combo = new Select(element);
